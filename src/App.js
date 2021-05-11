@@ -1,5 +1,11 @@
+import AboutUs from "./pages/AboutUs";
+
 function App() {
-  return null;
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
 }
 
 export default App;
