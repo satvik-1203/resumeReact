@@ -1,11 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Work({ Heading, Picture }) {
+export default function Work({ Movie }) {
   return (
     <div>
-      <h1>{Heading}</h1>
-      <div className="workImg">
-        <img src={Picture} alt="Work picture" />
+      <div className="workCard">
+        <h1>{Movie.title}</h1>
+
+        <div className="line"></div>
+        <Link className="workImg" to={Movie.url}>
+          <img src={Movie.mainImg} alt="Work picture" />
+        </Link>
       </div>
     </div>
   );

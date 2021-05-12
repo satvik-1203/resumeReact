@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import { Route, Switch } from "react-router-dom";
 import Contact from "./pages/Contact";
 import OurWork from "./pages/OurWork";
+import WorkDetails from "./pages/WorkDetails";
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
         <Route path="/contact">
           <Contact />
         </Route>
-        <Route path="/work">
+        <Route path="/work" exact>
           <OurWork />
+        </Route>
+        <Route path="/work/:id">
+          <WorkDetails />
         </Route>
       </Switch>
     </div>
