@@ -5,14 +5,17 @@ export default function FaqSection() {
   return (
     <div>
       <div className="faqSection">
-        <div className="faqHeading">
-          Any Questions?<div>FAQ</div>
-        </div>
         <div className="questions">
+          <div className="faqHeading">
+            Any Questions?
+            <div>
+              <span>FAQ</span>
+            </div>
+          </div>
           <FaqQuestion
             question={"How Do I Start?"}
             answer={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, impedit"
+              "Lorem ipsum dolor sit amet consectetur \nadipisicing elit. Ipsa, impedit"
             }
           />
           <FaqQuestion
@@ -22,7 +25,7 @@ export default function FaqSection() {
             }
           />
           <FaqQuestion
-            question={"How Do I start?"}
+            question={"Different Payment Methods"}
             answer={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, impedit"
             }

@@ -1,0 +1,26 @@
+.faqQuestion {
+  color: white;
+  .question {
+  }
+  .answer {
+    padding: 2.5rem 0 2.5rem 0;
+    line-height: 3rem;
+    white-space: pre-wrap;
+    color: rgb(169, 170, 172);
+  }
+  .line {
+    border-top: 1px solid white;
+    margin-bottom: 5rem;
+  }
+}
+
+.faqSection {
+  color: white;
+  padding: 8rem 10rem;
+}
+
+.faqHeading {
+  font-size: 3rem;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}

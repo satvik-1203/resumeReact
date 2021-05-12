@@ -1,0 +1,32 @@
+.flexService {
+  display: flex;
+  align-items: stretch;
+
+  margin-bottom: 1rem;
+  .Icon {
+    height: 1.8rem;
+  }
+}
+
+.ImgDiv {
+  padding: 0.3rem;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headingDiv {
+  background-color: white;
+  color: black;
+  padding: 0.1rem 0.4rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  font-size: 0.8rem;
+  color: rgb(195, 197, 199);
+}

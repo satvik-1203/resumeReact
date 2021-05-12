@@ -1,0 +1,36 @@
+nav {
+  background-color: #1e1f1e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .navBar {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    a {
+      font-size: 0.9rem;
+      padding-left: 5rem;
+    }
+  }
+}
+#logo {
+  font-size: 1.4rem;
+  font-family: "lobster", sans-serif;
+  font-weight: bold;
+  color: #24d997;
+}
