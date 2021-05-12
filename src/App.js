@@ -3,6 +3,8 @@ import GlobalStyle from "./components/GlobalStyle";
 import "./styles/app.scss";
 import Nav from "./components/Nav";
 import { Route, Switch } from "react-router-dom";
+import Contact from "./pages/Contact";
+import OurWork from "./pages/OurWork";
 
 function App() {
   return (
@@ -10,8 +12,14 @@ function App() {
       <GlobalStyle />
       <Nav />
       <Switch>
-        <Route path="/">
+        <Route path="/" exact>
           <AboutUs />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/work">
+          <OurWork />
         </Route>
       </Switch>
     </div>
