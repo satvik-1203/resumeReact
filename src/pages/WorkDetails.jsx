@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import WorkDetail from "../components/WorkDetail";
 import { MovieState } from "../MovieState";
 
 export default function WorkDetails() {
@@ -12,9 +13,5 @@ export default function WorkDetails() {
     setCurrentMovie(Movies.find((movie) => movie.url === url));
   }, [Movies, url]);
 
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  );
+  return <div>{currentMovie && <WorkDetail movie={currentMovie} />}</div>;
 }

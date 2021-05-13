@@ -1,0 +1,51 @@
+.workDetail {
+  .title {
+    color: white;
+    font-size: 2.4rem;
+    padding: 1.8rem;
+  }
+  .img {
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+  }
+  .cards {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    color: white;
+
+    .card {
+      width: 20rem;
+      .awardTitleLine {
+        padding: 1.5rem 0;
+        .awardTitle {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+        .cardLine {
+          width: 150px;
+          height: 4px;
+          background-color: #24d997;
+        }
+      }
+      .description {
+        color: rgb(203, 206, 209);
+      }
+    }
+  }
+  .secondaryImgContainer {
+    padding: 0 5rem;
+    margin: 0 auto;
+  }
+  .secondaryImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}

@@ -11,7 +11,7 @@ export default function OurWork() {
   return (
     <div className="bodyWork">
       {Movies.map((Movie) => (
-        <Work Movie={Movie} />
+        <Work key={Movie.url} Movie={Movie} />
       ))}
     </div>
   );
