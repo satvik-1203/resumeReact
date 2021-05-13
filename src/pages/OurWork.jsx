@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import Work from "../components/Work";
-import athlete from "../img/athlete2.png";
-import racer from "../img/theracer-small.png";
-import goodTimes from "../img/good-times2.jpg";
 import { MovieState } from "../MovieState";
+import { motion } from "framer-motion";
+import { pageAni } from "../animations/pageAnimation";
 
 export default function OurWork() {
   const [Movies] = useState(MovieState);
-
   return (
-    <div className="bodyWork">
+    <motion.div
+      variants={pageAni}
+      initial="initial"
+      animate="animate"
+      className="bodyWork"
+      exit="exit"
+    >
       {Movies.map((Movie) => (
         <Work key={Movie.url} Movie={Movie} />
       ))}
-    </div>
+    </motion.div>
   );
 }

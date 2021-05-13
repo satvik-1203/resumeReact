@@ -1,6 +1,13 @@
 import React from "react";
 import home1 from "../img/home1.png";
 import styled from "styled-components";
+import {
+  titleAnim,
+  aboutImg,
+  descriptionAbout,
+} from "../animations/pageAnimation";
+import { motion } from "framer-motion";
+import Wave from "../animations/Wave";
 
 export default function About() {
   return (
@@ -8,26 +15,27 @@ export default function About() {
       <$desription>
         <$title>
           <$titleHidden>
-            <h2>We work to make</h2>
+            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
           </$titleHidden>
           <$titleHidden>
-            <h2>
+            <motion.h2 variants={titleAnim}>
               Your <span>DREAMS</span> come{" "}
-            </h2>
+            </motion.h2>
           </$titleHidden>
           <$titleHidden>
-            <h2>True.</h2>
+            <motion.h2 variants={titleAnim}>True.</motion.h2>
           </$titleHidden>
         </$title>
-        <p>
+        <motion.p variants={descriptionAbout}>
           Contact us for any photography ideas that you have. <br /> We have
           professionals with amazing skills to help you achieve it.
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={descriptionAbout}>Contact Us</motion.button>
       </$desription>
       <$image>
-        <$IMG src={home1} alt="Picture" />
+        <$IMG variants={aboutImg} src={home1} alt="Picture" />
       </$image>
+      <Wave />
     </_About>
   );
 }
@@ -49,13 +57,14 @@ const $desription = styled.div`
   p {
     margin: 0rem 0rem 2rem 0rem;
   }
+  z-index: 2;
 `;
 
 const $image = styled.div`
   overflow: hidden;
 `;
 
-const $IMG = styled.img`
+const $IMG = styled(motion.img)`
   width: 100%;
   height: 85vh;
   object-fit: cover;
