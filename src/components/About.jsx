@@ -33,7 +33,13 @@ export default function About() {
         <motion.button variants={descriptionAbout}>Contact Us</motion.button>
       </$desription>
       <$image>
-        <$IMG variants={aboutImg} src={home1} alt="Picture" />
+        <$IMG
+          variants={aboutImg}
+          initial="initial"
+          animate="animate"
+          src={home1}
+          alt="Picture"
+        />
       </$image>
       <Wave />
     </_About>

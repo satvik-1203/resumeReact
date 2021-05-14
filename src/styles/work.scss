@@ -1,6 +1,7 @@
 .bodyWork {
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 .workCard {
@@ -21,4 +22,8 @@
 .line {
   border-bottom: 3px solid #24d997;
   margin: -1rem 0 1.5rem 0;
+}
+.pageContainer {
+  width: 100vw;
+  overflow: hidden;
 }

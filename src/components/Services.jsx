@@ -5,10 +5,19 @@ import teamwork from "../img/teamwork.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import home2 from "../img/home2.png";
+import { motion } from "framer-motion";
+import { fade } from "../animations/pageAnimation";
+import { useScroll } from "../hooks/useScroll";
 
 export default function Services() {
+  const [element, control] = useScroll();
   return (
-    <div>
+    <motion.div
+      initial="initial"
+      animate={control}
+      variants={fade}
+      ref={element}
+    >
       <div className="servicesFlex">
         <div className="services">
           <h1>
@@ -45,6 +54,6 @@ export default function Services() {
           <img className="home2" src={home2} alt="Home2" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

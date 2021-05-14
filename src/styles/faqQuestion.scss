@@ -1,15 +1,16 @@
 .faqQuestion {
   color: white;
+  cursor: pointer;
   .question {
+    margin-bottom: 2rem;
   }
   .answer {
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 1.5rem 0 2.5rem 0;
     line-height: 3rem;
     white-space: pre-wrap;
     color: rgb(169, 170, 172);
   }
   .line {
-    border-top: 1px solid white;
     margin-bottom: 5rem;
   }
 }
