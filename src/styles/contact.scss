@@ -1,0 +1,33 @@
+.bodyWork {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  padding: 3rem 6rem;
+
+  .contactHeading {
+    padding-bottom: 2rem;
+  }
+
+  ul {
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+  }
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+  }
+  .item {
+    font-size: 2rem;
+    color: rgb(100, 100, 100);
+    padding: 0.4rem;
+  }
+  .hide {
+    overflow: hidden;
+  }
+}

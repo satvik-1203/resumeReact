@@ -8,6 +8,7 @@ import {
 } from "../animations/pageAnimation";
 import { motion } from "framer-motion";
 import Wave from "../animations/Wave";
+import { ScrollTop } from "../hooks/ScrollTop";
 
 export default function About() {
   return (
@@ -42,6 +43,7 @@ export default function About() {
         />
       </$image>
       <Wave />
+      <ScrollTop />
     </_About>
   );
 }

@@ -132,6 +132,7 @@ export const workImg = {
 export const faqQuestionAni = {
   initial: {
     y: "-100%",
+    overflow: "hidden",
   },
   animate: {
     y: "0",

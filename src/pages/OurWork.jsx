@@ -8,6 +8,7 @@ import {
   pagesContainer,
   fade,
 } from "../animations/pageAnimation";
+import { ScrollTop } from "../hooks/ScrollTop";
 
 export default function OurWork() {
   const [Movies] = useState(MovieState);
@@ -36,6 +37,7 @@ export default function OurWork() {
           <Work key={Movie.url} Movie={Movie} />
         ))}
       </motion.div>
+      <ScrollTop />
     </motion.div>
   );
 }
